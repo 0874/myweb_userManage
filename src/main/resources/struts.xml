@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!--关闭感叹号的动态调用形式是为了使用通配符形式，，除此之外，
+        还需要在使用动态方法的action使用allowed-method声明可以使用的方法，如果不在列表里会不识别action-->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <include file="struts2Action/user.action.xml"/>
+    <include file="struts2Action/provide.action.xml"/>
+    <include file="struts2Action/userLogin.action.xml"/>
+    <package name="p1122" namespace="/" extends="struts-default">
+        <action name="test1126">
+            <result>/test1126.html</result>
+        </action>
+        <action name="t1131">
+            <result>/t1131.jsp</result>
+        </action>
+        <action name="ts2t" class="top.what_can_i_say.service.TestStruts2Time201801201019">
+            <result>/t1131.jsp</result>
+        </action>
+    </package>
+</struts>

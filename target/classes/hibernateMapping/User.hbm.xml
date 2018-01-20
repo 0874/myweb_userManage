@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-19 19:33:10 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="top.what_can_i_say.model.User" table="user">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="java.lang.String" not-null="true"      >
+            <column name="name" default="缺省名来自hbm" />
+        </property>
+        <property name="password" type="java.lang.String" not-null="true">
+            <column name="password" default="123456" />
+        </property>
+        <property name="email" type="java.lang.String" not-null="true">
+            <column name="email" />
+        </property>
+        <property name="loginID" type="java.lang.String" not-null="true">
+            <column name="login_id" default="每天都是新的一天"/>
+        </property>
+    </class>
+</hibernate-mapping>

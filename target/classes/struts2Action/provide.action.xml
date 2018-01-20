@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<!--我的网站可能不止一个应用，需要把接口，也就是本应用的功能入口提供给其他应用、-->
+<struts>
+    <package name="outerApplicationEntrance" extends="struts-default" namespace="/outside">
+        <!--去往注册页面-->
+        <action name="go-to-register">
+            <result>/WEB-INF/pages/register/register.jsp</result>
+        </action>
+        <!--去登录页面-->
+        <action name="go-to-login">
+            <result>/WEB-INF/pages/login/login.jsp</result>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>top.what_can_i_say</groupId>
+  <artifactId>UserManage201801201117</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>UserManage201801201117 Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!--引入struts2 -->
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+      <artifactId>struts2-core</artifactId>
+      <version>2.5</version>
+    </dependency>
+    <!--引入hibernate-->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>3.6.10.Final</version>
+    </dependency>
+    <!--引入log4j-->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-nop</artifactId>
+      <version>1.7.2</version>
+    </dependency>
+    <!--引入mysql jdbc-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.25</version>
+    </dependency>
+    <!--引入servlet-->
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
+          <version>2.5</version>
+      </dependency>
+      <dependency>
+          <groupId>edu.nuc.zzf</groupId>
+          <artifactId>Tcs1109</artifactId>
+          <version>1.0-SNAPSHOT</version>
+          <scope>test</scope>
+      </dependency>
+    <!--引入java mail-->
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4.7</version>
+      <!--如果这里写1.4可能会引发530错误，版本也会这样,-->
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>UserManage201801201117</finalName>
+  </build>
+</project>

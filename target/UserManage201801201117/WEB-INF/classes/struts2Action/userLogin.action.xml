@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="login-user" namespace="/user" extends="struts-default">
+        <action name="login_*" class="top.what_can_i_say.service.UserAction01202022ForLogin"
+            method="{1}">
+            <result>/WEB-INF/pages/login/loginOver.jsp</result>
+            <result name="person-info-manage">/WEB-INF/pages/infoManage/personInfoManage.jsp</result>
+            <!--非法登录-->
+            <result name="illegal-login">/WEB-INF/pages/login/illegalLogin.jsp</result>
+            <!--配置允许的方法需要在result标签后面-->
+            <allowed-methods>requestLogin,loginSuccess</allowed-methods>
+        </action>
+    </package>
+</struts>

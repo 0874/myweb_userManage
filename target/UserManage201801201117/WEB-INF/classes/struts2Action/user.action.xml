@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="user0120" namespace="/user" extends="struts-default">
+        <action name="addOneUser" class="top.what_can_i_say.service.UserAction201801201157"
+                method="addOneUser">
+            <result>/t1131.jsp</result>
+        </action>
+        <action name="verifyUserRegister" class="top.what_can_i_say.service.UserAction201801201157"
+            method="verifyUserRegisterLink">
+            <result>/t1131.jsp</result>
+            <result name="no-exist">/WEB-INF/pages/register/userNotExist.jsp</result>
+            <result name="invalid">/WEB-INF/pages/register/linkIsInvalid.jsp</result>
+            <result name="register-over">/WEB-INF/pages/register/registerSUC.jsp</result>
+            <result name="register-error">/WEB-INF/pages/register/registerError.jsp</result>
+        </action>
+    </package>
+</struts>
